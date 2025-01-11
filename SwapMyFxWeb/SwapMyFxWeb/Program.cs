@@ -1,4 +1,3 @@
-using SwapMyFxWeb.Client.Pages;
 using SwapMyFxWeb.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +29,6 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(SwapMyFxWeb.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(_Imports).Assembly);
 
 app.Run();
